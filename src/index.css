@@ -33,7 +33,12 @@ header {
 	padding: 0.2rem 0.25rem 0 0.25rem;
 	border-radius: 15%;
 	box-shadow: 0.1rem 0.1rem 0.1rem black;
-	/* text-shadow: 0.1rem 0.1rem 0.1rem black; */
+}
+a {
+	color: rgb(0, 255, 242);
+	text-shadow: 0.1rem 0.1rem 0.1rem black;
+	font-family: 'Domine', serif;
+	text-decoration: none;
 }
 main {
 	display: flex;
@@ -93,13 +98,5 @@ li {
 	}
 	to {
 		opacity: 0;
-	}
-}
-@keyframes none {
-	from {
-		opacity: 100;
-	}
-	to {
-		opacity: 100;
 	}
 }
