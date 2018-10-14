@@ -10,6 +10,7 @@ header {
 	display: flex;
 	justify-content: center;
 	padding: 0.5rem;
+	margin-right: 0;
 	font-size: 1.5rem;
 	text-align: center;
 	background-color: rgb(0, 140, 255);
@@ -25,6 +26,7 @@ header {
 .button-div {
 	display: flex;
 	align-items: center;
+	margin-right: 0;
 }
 .menubutton {
 	border: none;
@@ -33,6 +35,7 @@ header {
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-size: 1.5rem;
 	outline: none;
+	padding-right: 0;
 }
 .menubutton:active {
 	text-shadow: none;
@@ -63,7 +66,8 @@ main {
 .side-menu ul {
 	list-style: none;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	padding: 0;
 }
 .side-menu-out {
@@ -81,11 +85,13 @@ main {
 .side-menu-out ul {
 	list-style: none;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 	padding: 0;
 }
 li {
-	margin: 0 0.5rem;
+	margin: 0.5rem;
 }
 @keyframes fadein {
 	from {
