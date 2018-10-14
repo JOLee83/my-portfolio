@@ -27,12 +27,15 @@ header {
 	align-items: center;
 }
 .menubutton {
-	border: 2px solid rgb(0, 255, 242);
+	border: none;
 	background-color: transparent;
 	color: rgb(0, 255, 242);
-	padding: 0.2rem 0.25rem 0 0.25rem;
-	border-radius: 15%;
-	box-shadow: 0.1rem 0.1rem 0.1rem black;
+	text-shadow: 0.1rem 0.1rem 0.1rem black;
+	font-size: 1.5rem;
+	outline: none;
+}
+.menubutton:active {
+	text-shadow: none;
 }
 a {
 	color: rgb(0, 255, 242);
@@ -98,5 +101,44 @@ li {
 	}
 	to {
 		opacity: 0;
+	}
+}
+@media (min-width: 500px) {
+	header {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	.side-menu {
+		height: 100%;
+		width: auto;
+		border-bottom: none;
+		border-right: 2px solid rgb(0, 255, 242);
+	}
+	.side-menu ul {
+		flex-direction: column;
+	}
+	.side-menu-out {
+		height: 100%;
+		width: auto;
+		border-bottom: none;
+		border-right: 2px solid rgb(0, 255, 242);
+	}
+	.side-menu-out ul {
+		flex-direction: column;
+	}
+	li {
+		margin: 1rem 1rem;
+	}
+	a:hover {
+		color: rgba(4, 1, 143, 0.993);
+	}
+	a:active {
+		text-shadow: none;
+	}
+	.my-name {
+		margin-left: 10px;
+	}
+	.spacer {
+		display: none;
 	}
 }
