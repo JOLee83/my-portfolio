@@ -9,6 +9,8 @@ body {
 header {
 	display: flex;
 	justify-content: center;
+	position: fixed;
+	width: calc(100% - 1rem);
 	padding: 0.5rem;
 	margin-right: 0;
 	font-size: 1.5rem;
@@ -19,6 +21,7 @@ header {
 	color: rgb(0, 255, 242);
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
+	z-index: 200;
 }
 .spacer {
 	flex: 1;
@@ -53,12 +56,14 @@ a {
 	text-decoration: none;
 }
 main {
+	padding-top: 45px;
 	display: flex;
 	justify-content: center;
 	font-family: 'Roboto', sans-serif;
 }
 
 .side-menu {
+	padding-top: 40px;
 	width: 100%;
 	position: fixed;
 	background-color: rgba(0, 140, 255, 0.75);
@@ -77,6 +82,7 @@ main {
 	padding: 0;
 }
 .side-menu-out {
+	padding-top: 40px;
 	width: 100%;
 	position: fixed;
 	background-color: rgba(0, 140, 255, 0.75);
@@ -85,21 +91,26 @@ main {
 	color: rgb(0, 255, 242);
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
-	animation: fadeout 1s linear;
+	animation: fadeout 2s linear;
 	opacity: 0;
+	margin-top: -100%;
 }
 .side-menu-out ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	/* justify-content: center; */
 	padding: 0;
 }
 li {
 	margin: 0.5rem;
 }
-span i {
+section {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+section i {
 	margin: 0.5rem;
 	font-size: 2rem;
 }
@@ -108,15 +119,22 @@ span i {
 		opacity: 0;
 	}
 	to {
-		opacity: 100;
+		opacity: 1;
 	}
 }
 @keyframes fadeout {
-	from {
-		opacity: 100;
+	0% {
+		opacity: 1;
+		margin-top: 0;
 	}
-	to {
+	50% {
 		opacity: 0;
+	}
+	99% {
+		margin-top: 0;
+	}
+	100% {
+		margin-top: -100%;
 	}
 }
 @media (min-width: 500px) {
@@ -124,11 +142,15 @@ span i {
 		flex-direction: row-reverse;
 		justify-content: flex-end;
 	}
+	main {
+		padding-top: 60px;
+	}
 	.side-menu {
 		height: 100%;
 		width: auto;
 		border-bottom: none;
 		border-right: 2px solid rgb(0, 255, 242);
+		padding-top: 60px;
 	}
 	.side-menu ul {
 		flex-direction: column;
@@ -138,6 +160,7 @@ span i {
 		width: auto;
 		border-bottom: none;
 		border-right: 2px solid rgb(0, 255, 242);
+		padding-top: 60px;
 	}
 	.side-menu-out ul {
 		flex-direction: column;

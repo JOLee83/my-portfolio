@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const sideMenu = props => (
 	<nav className="side-menu">
@@ -28,14 +28,6 @@ const sideMenu = props => (
 					Resume
 				</Link>
 			</li>
-			<span>
-				<i className="fas fa-mobile-alt" />
-				<i className="fas fa-envelope" />
-				<i className="fab fa-linkedin" />
-				<i className="fab fa-github" />
-				<i className="fab fa-slack" />
-				<i className="fab fa-meetup" />
-			</span>
 		</ul>
 	</nav>
 )

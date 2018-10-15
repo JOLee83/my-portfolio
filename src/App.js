@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Toolbar from './Components/Toolbar/Toolbar'
 import SideMenu from './Components/SideMenu/SideMenu'
 import SideMenuOut from './Components/SideMenu/SideMenuOut'

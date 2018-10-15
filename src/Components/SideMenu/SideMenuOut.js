@@ -19,15 +19,6 @@ const sideMenuOut = () => (
 				<i className="fas fa-file" />
 				Resume
 			</li>
-
-			<span>
-				<i className="fas fa-mobile-alt" />
-				<i className="fas fa-envelope" />
-				<i className="fab fa-linkedin" />
-				<i className="fab fa-github" />
-				<i className="fab fa-slack" />
-				<i className="fab fa-meetup" />
-			</span>
 		</ul>
 	</nav>
 )

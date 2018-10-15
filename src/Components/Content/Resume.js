@@ -8,6 +8,7 @@ const Document = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 10px;
 	img {
 		border: 1px solid black;
 		width: 75%;
@@ -24,13 +25,13 @@ class Resume extends Component {
 	render() {
 		return (
 			<Document>
-				<img alt="resume" src="./Justin_Oliver_Lee_Resume.jpg" />
 				<a
 					href="https://drive.google.com/file/d/1TuEUxaJHyiaz4SVyjLEzUuuqmxlJBvIq/view?usp=sharing"
 					target="_blank"
 				>
 					<i className="fas fa-file" /> Resume (PDF)
 				</a>
+				<img alt="resume" src="./Justin_Oliver_Lee_Resume.jpg" />
 			</Document>
 		)
 	}
