@@ -6,6 +6,7 @@ import SideMenuOut from './Components/SideMenu/SideMenuOut'
 import AboutMe from './Components/Content/AboutMe'
 import Portfolio from './Components/Content/Portfolio'
 import ContactMe from './Components/Content/ContactMe'
+import Resume from './Components/Content/Resume'
 
 class App extends Component {
 	state = {
@@ -46,6 +47,7 @@ class App extends Component {
 							<Route exact path="/" component={AboutMe} />
 							<Route path="/portfolio" component={Portfolio} />
 							<Route path="/contactme" component={ContactMe} />
+							<Route path="/resume" component={Resume} />
 						</Switch>
 					</main>
 				</>

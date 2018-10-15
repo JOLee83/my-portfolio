@@ -6,23 +6,27 @@ const sideMenu = props => (
 		<ul>
 			<li>
 				<Link to="/" onClick={props.click}>
+					<i className="fas fa-home" />
 					About Me
 				</Link>
 			</li>
 			<li>
 				<Link to="/portfolio" onClick={props.click}>
+					<i className="fas fa-briefcase" />
 					Portfolio
 				</Link>
 			</li>
 			<li>
 				<Link to="/contactme" onClick={props.click}>
+					<i className="fas fa-address-book" />
 					Contact Me
 				</Link>
 			</li>
 			<li>
-				<a href="./Justin_Oliver_Lee_Resume.pdf" target="_blank">
+				<Link to="/resume" onClick={props.click}>
+					<i className="fas fa-file" />
 					Resume
-				</a>
+				</Link>
 			</li>
 			<span>
 				<i className="fas fa-mobile-alt" />
@@ -30,6 +34,7 @@ const sideMenu = props => (
 				<i className="fab fa-linkedin" />
 				<i className="fab fa-github" />
 				<i className="fab fa-slack" />
+				<i className="fab fa-meetup" />
 			</span>
 		</ul>
 	</nav>

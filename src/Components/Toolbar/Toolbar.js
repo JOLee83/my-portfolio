@@ -4,6 +4,7 @@ import MenuToggleButton from '../SideMenu/MenuToggleButton'
 
 const toolbar = props => (
 	<header>
+		<div className="spacer-two" />
 		<div className="my-name">Justin Oliver Lee</div>
 		<div className="spacer" />
 		<div className="button-div">

@@ -3,7 +3,14 @@ class ContanctMe extends Component {
 	render() {
 		return (
 			<>
-				<p>Contact Me Coming Soon</p>
+				<span>
+					<i className="fas fa-mobile-alt" />
+					<i className="fas fa-envelope" />
+					<i className="fab fa-linkedin" />
+					<i className="fab fa-github" />
+					<i className="fab fa-slack" />
+					<i className="fab fa-meetup" />
+				</span>
 			</>
 		)
 	}
