@@ -93,6 +93,10 @@ main {
 li {
 	margin: 0.5rem;
 }
+span i {
+	margin: 0.5rem;
+	font-size: 2rem;
+}
 @keyframes fadein {
 	from {
 		opacity: 0;
@@ -146,5 +150,10 @@ li {
 	}
 	.spacer {
 		display: none;
+	}
+	span {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 	}
 }
