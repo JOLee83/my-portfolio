@@ -19,7 +19,7 @@ const ContactInfo = styled.div`
 	i {
 		margin-bottom: 1rem;
 		font-size: 4rem;
-		background-color: rgb(0, 140, 255);
+		background-image: linear-gradient(to top, rgb(0, 120, 255), rgb(0, 210, 255));
 		width: 6rem;
 		height: 5rem;
 		text-align: center;
@@ -87,10 +87,7 @@ class ContanctMe extends Component {
 							lee.justin.oliver@gmail.com
 						</a>
 
-						<a
-							href="https://www.linkedin.com/in/justin-oliver-lee/"
-							target="_blank"
-						>
+						<a href="https://www.linkedin.com/in/justin-oliver-lee/">
 							<i className="fab fa-linkedin" />
 							LinkedIn
 						</a>

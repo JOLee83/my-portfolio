@@ -16,13 +16,14 @@ header {
 	margin-right: 0;
 	font-size: 1.5rem;
 	text-align: center;
-	background-color: rgb(0, 140, 255);
+	/* background-color: rgb(0, 140, 255); */
 	border-bottom: 2px solid rgb(0, 255, 242);
 	box-shadow: 0.1rem 0.1rem 0.1rem black;
 	color: rgb(0, 255, 242);
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
 	z-index: 200;
+	background-image: linear-gradient(to top, rgb(0, 120, 255), rgb(0, 210, 255));
 }
 .spacer {
 	flex: 1;
@@ -67,13 +68,17 @@ main {
 	padding-top: 40px;
 	width: 100%;
 	position: fixed;
-	background-color: rgba(0, 140, 255, 0.75);
+	background-image: linear-gradient(
+		to top,
+		rgba(0, 120, 255, 0.75),
+		rgba(0, 210, 255, 0.75)
+	);
 	border-bottom: 2px solid rgb(0, 255, 242);
 	box-shadow: 0.1rem 0.1rem 0.1rem black;
 	color: rgb(0, 255, 242);
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
-	animation: fadein 1s linear;
+	animation: fadein 0.5s linear;
 }
 .side-menu ul,
 .side-menu-out ul {
@@ -88,13 +93,17 @@ main {
 	padding-top: 40px;
 	width: 100%;
 	position: fixed;
-	background-color: rgba(0, 140, 255, 0.75);
+	background-image: linear-gradient(
+		to top,
+		rgba(0, 120, 255, 0.75),
+		rgba(0, 210, 255, 0.75)
+	);
 	border-bottom: 2px solid rgb(0, 255, 242);
 	box-shadow: 0.1rem 0.1rem 0.1rem black;
 	color: rgb(0, 255, 242);
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
-	animation: fadeout 2s linear;
+	animation: fadeout 1s linear;
 	opacity: 0;
 	margin-top: -100%;
 }
