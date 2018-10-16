@@ -45,15 +45,25 @@ const ContactInfo = styled.div`
 	}
 	@media (min-width: 500px) {
 		padding-top: 3rem;
+		
+		
 		div {
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 		a {
-			margin: 6rem 3rem;
-			font-size: 1rem;
-			white-space: nowrap;
+			margin: 0 3rem 6rem 3rem;
+			font-size: 1.1rem;
+			// white-space: nowrap;
 
+		}
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.3rem;
+			margin-bottom: 6rem;
 		}
 	}
 `
