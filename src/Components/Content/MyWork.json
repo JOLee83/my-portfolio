@@ -1,0 +1,23 @@
+[
+	{
+		"title": "Mine Sweeper",
+		"imageSource": "./img/minesweeper.png",
+		"description": "A react based mine sweeper game using an API. This was from my first week of learning React at SDG. API can be slow at times, and have not set up for mobile use yet.",
+		"location": "http://mine-sweeper-justin.surge.sh/",
+		"code": "https://github.com/JOLee83/minesweeper"
+	},
+	{
+		"title": "Black Jack",
+		"imageSource": "./img/blackjack.png",
+		"description": "A JavaScript based Black Jack game. This was the culmination of my first week of learning JavaScript at SDG. Set up the CSS for mobile use, but looks great on large screens as well.",
+		"location": "http://black-jack-justin.surge.sh/",
+		"code": "https://github.com/JOLee83/black-jack"
+	},
+	{
+		"title": "My Portfolio",
+		"imageSource": "./img/portfolio.png",
+		"description": "I started to build this site as I completed the front-end portion of my time at SDG. I used React JS, React Router, Styled Components, and much more to build this site.",
+		"location": "Https://justin-oliver.com",
+		"code": "https://github.com/JOLee83/my-portfolio"
+	}
+]

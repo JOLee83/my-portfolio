@@ -55,8 +55,6 @@ const ContactInfo = styled.div`
 		a {
 			margin: 0 3rem 6rem 3rem;
 			font-size: 1.1rem;
-			// white-space: nowrap;
-
 		}
 		h1 {
 			font-size: 2rem;
@@ -64,6 +62,10 @@ const ContactInfo = styled.div`
 		p {
 			font-size: 1.3rem;
 			margin-bottom: 6rem;
+		}
+		i:hover {
+			border-color: rgba(255, 255, 255, 0.993);
+	
 		}
 	}
 `
