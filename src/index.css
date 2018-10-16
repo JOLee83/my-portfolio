@@ -157,6 +157,11 @@ section i {
 		border-bottom: none;
 		border-right: 2px solid rgb(0, 255, 242);
 		padding-top: 60px;
+		background-image: linear-gradient(
+			to left,
+			rgba(0, 120, 255, 0.75),
+			rgba(0, 210, 255, 0.75)
+		);
 	}
 	.side-menu ul,
 	.side-menu-out ul {

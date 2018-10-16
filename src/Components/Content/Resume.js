@@ -8,6 +8,7 @@ const Document = styled.div`
 	flex-direction: column;
 	align-items: center;
 	padding: 10px;
+	font-size: 1.2rem;
 	img {
 		border: 1.1px solid black;
 		width: 95%;
