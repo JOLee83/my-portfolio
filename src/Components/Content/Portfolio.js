@@ -3,7 +3,10 @@ class Porfolio extends Component {
 	render() {
 		return (
 			<>
-				<p>Portfolio Coming Soon</p>
+				<a href="https://github.com/JOLee83" target="_blank">
+					<i className="fab fa-github" />
+					GitHub
+				</a>
 			</>
 		)
 	}

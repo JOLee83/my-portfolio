@@ -1,30 +1,91 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+
+const ContactInfo = styled.div`
+	display: flex;
+	flex-direction: column;
+	
+	padding 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	a {
+		margin: 10px;
+		font-size: 0rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	i {
+		margin-bottom: 1rem;
+		font-size: 4rem;
+		background-color: rgb(0, 140, 255);
+		width: 6rem;
+		height: 5rem;
+		text-align: center;
+		padding-top: 1rem;
+		border-radius: 50%;
+		border 3px solid rgb(0, 255, 242);
+		box-shadow: 0.1rem 0.1rem 0.1rem black;
+	}
+	h1 {
+		margin: 1rem;
+		text-align: center;
+		font-size: 1.5rem;
+		font-style: italic;
+		font-weight: normal;
+		margin-bottom: .5rem;
+
+	}
+	p {
+		margin: 0;
+		padding: 0 1.5rem;
+		text-align: center;
+
+	}
+	@media (min-width: 500px) {
+		padding-top: 3rem;
+		div {
+			display: flex;
+			justify-content: center;
+		}
+		a {
+			margin: 6rem 3rem;
+			font-size: 1rem;
+			white-space: nowrap;
+
+		}
+	}
+`
+
 class ContanctMe extends Component {
 	render() {
 		return (
 			<>
-				<section>
-					<a href="tel://19044729516">
-						<i className="fas fa-mobile-alt" /> (904) 472-9516
-					</a>
-					<a href="mailto:lee.justin.oliver@gmail.com">
-						<i className="fas fa-envelope" />
-						lee.justin.oliver@gmail.com
-					</a>
-					<a
-						href="https://www.linkedin.com/in/justin-oliver-lee/"
-						target="_blank"
-					>
-						<i className="fab fa-linkedin" />
-					</a>
-					<a href="https://github.com/JOLee83" target="_blank">
-						<i className="fab fa-github" />
-					</a>
-					<i className="fab fa-slack" />
-					<a href="https://www.meetup.com/members/262768512/" target="_blank">
-						<i className="fab fa-meetup" />
-					</a>
-				</section>
+				<ContactInfo>
+					<h1>Start a Conversation</h1>
+					<p>
+						Looking to fill a developer position or just want a web site built,
+						let's talk.
+					</p>
+					<div>
+						<a href="tel://19044729516">
+							<i className="fas fa-mobile-alt" /> (904) 472-9516
+						</a>
+						<a href="mailto:lee.justin.oliver@gmail.com">
+							<i className="fas fa-envelope" />
+							lee.justin.oliver@gmail.com
+						</a>
+
+						<a
+							href="https://www.linkedin.com/in/justin-oliver-lee/"
+							target="_blank"
+						>
+							<i className="fab fa-linkedin" />
+							LinkedIn
+						</a>
+					</div>
+				</ContactInfo>
 			</>
 		)
 	}

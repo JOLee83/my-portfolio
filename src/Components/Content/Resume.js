@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import resume from '../../Resources/Justin_Oliver_Lee_Resume.pdf'
 
 const Document = styled.div`
 	width: 100%;
@@ -10,9 +9,10 @@ const Document = styled.div`
 	align-items: center;
 	padding: 10px;
 	img {
-		border: 1px solid black;
-		width: 75%;
+		border: 1.1px solid black;
+		width: 95%;
 		margin: 10px;
+		box-shadow: 0.1rem 0.1rem 0.1rem rgb(169, 169, 169);
 	}
 	@media (min-width: 1000px) {
 		width: 50%;
@@ -31,7 +31,7 @@ class Resume extends Component {
 				>
 					<i className="fas fa-file" /> Resume (PDF)
 				</a>
-				<img alt="resume" src="./Justin_Oliver_Lee_Resume.jpg" />
+				<img alt="resume" src="./img/Justin_Oliver_Lee_Resume.jpg" />
 			</Document>
 		)
 	}
