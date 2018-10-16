@@ -8,7 +8,6 @@ const ShowMyWork = styled.div`
 	align-items: center;
 
 	section {
-		height: 75vh;
 		border 1px solid rgb(0, 255, 242);
 		border-radius: 5px;
 		margin: 4% 4% 0 4%; 
@@ -25,6 +24,7 @@ const ShowMyWork = styled.div`
 		img {
 			width: 90%;
 			border 1px solid rgb(0, 0, 0);
+			margin-bottom: .5rem;
 
 		}
 		p{
@@ -53,9 +53,8 @@ const ShowMyWork = styled.div`
 	@media (min-width: 900px) {
 		section{
 			margin-top: 1rem;
-			width: 50%;
+			width: 40%;
 			border 3px solid rgb(0, 255, 242);
-
 		}
 		i {
 			font-size: 2rem;
@@ -104,7 +103,6 @@ class Porfolio extends Component {
 				<section>
 					<h2>{MyWork[index].title}</h2>
 					<img src={MyWork[index].imageSource} alt={MyWork[index].title} />
-					<p>{MyWork[index].description}</p>
 					<aside>
 						<a href={MyWork[index].location} target="_blank">
 							The Site
@@ -123,6 +121,9 @@ class Porfolio extends Component {
 					<i className="fas fa-angle-right" onClick={this.Next} />
 					<i className="fas fa-angle-double-right" onClick={this.Last} />
 				</aside>
+				<section>
+					<p>{MyWork[index].description}</p>
+				</section>
 			</ShowMyWork>
 		)
 	}
