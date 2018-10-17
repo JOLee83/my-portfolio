@@ -36,17 +36,16 @@ const ShowMyWork = styled.div`
 		padding: .5rem;
 	}
 	i {
-		margin-bottom: 1rem;
-		font-size: 1rem;
+		font-size: 1.5rem;
 		background-image: linear-gradient(to top, rgb(0, 120, 255), rgb(0, 210, 255));
-		width: 1.5rem;
-		height: 1.25rem;
+		width: 2.25rem;
+		height: 1.875rem;
 		text-align: center;
-		padding-top: .25rem;
+		padding-top: .375rem;
 		border-radius: 50%;
 		border 1.5px solid rgb(0, 255, 242);
 		box-shadow: 0.1rem 0.1rem 0.1rem black;
-		margin: .5rem .75rem 0 .75rem ;
+		margin: .5rem .5rem 0 .5rem ;
 		color: rgb(0, 255, 242);
 
 	}
