@@ -2,7 +2,7 @@
 	{
 		"title": "Mine Sweeper",
 		"imageSource": "./img/minesweeper.png",
-		"description": "A react based mine sweeper game using an API. This was from my first week of learning React at SDG. API can be slow at times, and have not set up for mobile use yet.",
+		"description": "A React based mine sweeper game using an API. This was from my first week of learning React at SDG. API can be slow at times, and have not set up for mobile use yet.",
 		"location": "http://mine-sweeper-justin.surge.sh/",
 		"code": "https://github.com/JOLee83/minesweeper"
 	},
@@ -16,7 +16,7 @@
 	{
 		"title": "My Color Chart",
 		"imageSource": "./img/colorchart.png",
-		"description": "My first project with React. The purpose of this project was an introduction to state and props, as well as to see React renders the colors as the sliders moves. ",
+		"description": "My first project with React. The purpose of this project was an introduction to state and props, as well as to see how React renders the colors as the sliders moves. ",
 		"location": "http://color-chart-justin.surge.sh/",
 		"code": "https://github.com/JOLee83/color-chart"
 	},

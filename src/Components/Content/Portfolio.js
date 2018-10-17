@@ -10,7 +10,7 @@ const ShowMyWork = styled.div`
 	section {
 		border 1px solid rgb(0, 255, 242);
 		border-radius: 5px;
-		margin: 4% 4% 0 4%; 
+		margin: 1rem 4% 0 4%; 
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -32,6 +32,7 @@ const ShowMyWork = styled.div`
 		}
 	
 	}
+
 	a {
 		padding: .5rem;
 	}
@@ -44,10 +45,16 @@ const ShowMyWork = styled.div`
 		padding-top: .375rem;
 		border-radius: 50%;
 		border 1.5px solid rgb(0, 255, 242);
-		box-shadow: 0.1rem 0.1rem 0.1rem black;
-		margin: .5rem .5rem 0 .5rem ;
+		box-shadow: 0.05rem 0.05rem 0.05rem black;
+		margin: 1rem .5rem 0 .5rem ;
 		color: rgb(0, 255, 242);
+		cursor: pointer;
+		text-shadow: 0.1rem 0.1rem 0.1rem black;
 
+
+	}
+	i:active {
+		box-shadow: none;
 	}
 	@media (min-width: 900px) {
 		section{
@@ -60,6 +67,7 @@ const ShowMyWork = styled.div`
 			width: 3rem;
 			height: 2.5rem;
 			padding-top: .5rem;
+			margin-top: 1rem;
 
 		}
 		i:hover {
