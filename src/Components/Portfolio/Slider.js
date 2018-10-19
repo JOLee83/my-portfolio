@@ -66,6 +66,15 @@ class Slider extends Component {
 			translateValue: 0
 		}
 	}
+	updateScreen = () => {
+		this.setState(() => ({
+			index: 0,
+			translateValue: 0
+		}))
+	}
+	componentDidMount() {
+		window.addEventListener('resize', this.updateScreen)
+	}
 	prevSlide = () => {
 		if (this.state.index === 0) {
 			// return
