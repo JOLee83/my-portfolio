@@ -43,7 +43,17 @@ const ShowMyWork = styled.div`
 
 	a {
 		padding: 0 .5rem;
-
+	}
+	.git {
+		i{
+		font-size: 3rem;
+		// background-color: red;
+		// color: black;
+		// text-shadow: none;
+		// border-radius: 50%;
+		// border: 1px solid white;
+	}
+	}
 `
 
 const Slide = ({ title, image, location, code, description }) => {
@@ -59,6 +69,14 @@ const Slide = ({ title, image, location, code, description }) => {
 					<aside>
 						<a href={location} target="_blank" rel="noopener noreferrer">
 							The Site
+						</a>
+						<a
+							className="git"
+							href="https://github.com/JOLee83"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i className="fab fa-github-square" title="My GitHub" />
 						</a>
 						<a href={code} target="_blank" rel="noopener noreferrer">
 							The Code
