@@ -126,7 +126,7 @@ section i {
 }
 .slider {
 	position: relative;
-	width: 500px;
+	max-width: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	white-space: nowrap;
@@ -144,19 +144,6 @@ section i {
 	width: 100%;
 	margin-top: 1rem;
 }
-
-.arrow {
-	height: 50px;
-	width: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #f9f9f9;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: transform ease-in 0.1s;
-}
-
 .nextArrow {
 	position: absolute;
 	top: 50%;
@@ -165,7 +152,7 @@ section i {
 	color: rgb(0, 255, 242);
 	font-size: 2rem;
 	text-shadow: -0.1rem 0.1rem 0.1rem black;
-	transition: text-shadow 0.5s ease-in-out, scale 0.5s ease-in-out;
+	transition: text-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .backArrow {
@@ -176,7 +163,7 @@ section i {
 	color: rgb(0, 255, 242);
 	font-size: 2rem;
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
-	transition: text-shadow 0.5s ease-in-out, scale 0.5s ease-in-out;
+	transition: text-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .backArrow:active,
 .nextArrow:active {
