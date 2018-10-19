@@ -50,7 +50,7 @@ const ShowMyWork = styled.div`
 		color: rgb(0, 255, 242);
 		cursor: pointer;
 		text-shadow: 0.1rem 0.1rem 0.1rem black;
-
+		transition: box-shadow .5s ease-in-out;
 
 	}
 	i:active {
@@ -68,11 +68,13 @@ const ShowMyWork = styled.div`
 			height: 2.5rem;
 			padding-top: .5rem;
 			margin-top: 1rem;
+			transition: border-color .5s ease-in-out, color .5s ease-in-out, box-shadow .5s ease-in-out;
+
 
 		}
 		i:hover {
 			color: rgba(255, 255, 255, 0.993);
-			border: 1.5px solid rgba(255, 255, 255, 0.993);
+			border-color: rgba(255, 255, 255, 0.993);
 		}
 	}
 `
@@ -111,22 +113,42 @@ class Porfolio extends Component {
 					<h2>{MyWork[index].title}</h2>
 					<img src={MyWork[index].imageSource} alt={MyWork[index].title} />
 					<aside>
-						<a href={MyWork[index].location} target="_blank">
+						<a
+							href={MyWork[index].location}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							The Site
 						</a>
-						<a href={MyWork[index].code} target="_blank">
+						<a
+							href={MyWork[index].code}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							The Code
 						</a>
 					</aside>
 				</section>
 				<aside>
-					<i className="fas fa-angle-double-left" onClick={this.First} />
-					<i className="fas fa-angle-left" onClick={this.Back} />
-					<a href="https://github.com/JOLee83">
-						<i className="fab fa-github" />
+					<i
+						className="fas fa-angle-double-left"
+						title="First"
+						onClick={this.First}
+					/>
+					<i className="fas fa-angle-left" title="Back" onClick={this.Back} />
+					<a
+						href="https://github.com/JOLee83"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="fab fa-github" title="My GitHub" />
 					</a>
-					<i className="fas fa-angle-right" onClick={this.Next} />
-					<i className="fas fa-angle-double-right" onClick={this.Last} />
+					<i className="fas fa-angle-right" title="Next" onClick={this.Next} />
+					<i
+						className="fas fa-angle-double-right"
+						title="Last"
+						onClick={this.Last}
+					/>
 				</aside>
 				<section>
 					<p>{MyWork[index].description}</p>

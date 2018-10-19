@@ -44,6 +44,7 @@ header {
 	font-size: 1.5rem;
 	outline: none;
 	padding-right: 0;
+	transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
 }
 .menubutton:active {
 	text-shadow: none;
@@ -56,6 +57,8 @@ a {
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
 	text-decoration: none;
+	transition: color 0.4s ease-in-out;
+	transition: text-shadow 0.4s ease-in-out;
 }
 main {
 	padding-top: 45px;
@@ -79,6 +82,7 @@ main {
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	font-family: 'Domine', serif;
 	animation: fadein 0.5s linear;
+	z-index: 150;
 }
 .side-menu ul,
 .side-menu-out ul {
@@ -106,6 +110,7 @@ main {
 	animation: fadeout 1s linear;
 	opacity: 0;
 	margin-top: -100%;
+	z-index: 150;
 }
 li {
 	margin: 0.5rem;
@@ -119,6 +124,70 @@ section i {
 	margin: 0.5rem;
 	font-size: 2rem;
 }
+.slider {
+	position: relative;
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.slider-frame {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.slide {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	margin-top: 4rem;
+}
+
+.arrow {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f9f9f9;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform ease-in 0.1s;
+}
+
+.nextArrow {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	z-index: 999;
+	color: rgb(0, 255, 242);
+	font-size: 2rem;
+	text-shadow: -0.1rem 0.1rem 0.1rem black;
+	transition: text-shadow 0.5s ease-in-out;
+}
+
+.backArrow {
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	z-index: 999;
+	color: rgb(0, 255, 242);
+	font-size: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.1rem black;
+	transition: text-shadow 0.5s ease-in-out;
+}
+.backArrow:active,
+.nextArrow:active {
+	text-shadow: none;
+}
+
+.fa-arrow-right:before,
+.fa-arrow-left:before {
+	color: #222;
+}
+
 @keyframes fadein {
 	from {
 		opacity: 0;
@@ -143,6 +212,10 @@ section i {
 	}
 }
 @media (min-width: 500px) {
+	.backArrow:hover,
+	.nextArrow:hover {
+		font-size: 3rem;
+	}
 	header {
 		flex-direction: row-reverse;
 		justify-content: flex-end;
@@ -169,6 +242,9 @@ section i {
 	}
 	li {
 		margin: 1rem 1rem;
+	}
+	a {
+		transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
 	}
 	a:hover {
 		color: rgba(255, 255, 255, 0.993);

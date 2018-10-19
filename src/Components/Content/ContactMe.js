@@ -11,10 +11,13 @@ const ContactInfo = styled.div`
 	height: 100%;
 	a {
 		margin: 10px;
-		font-size: 0rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+	aside {
+		font-size: 0rem;
+
 	}
 	i {
 		margin-bottom: 1rem;
@@ -27,6 +30,8 @@ const ContactInfo = styled.div`
 		border-radius: 50%;
 		border 3px solid rgb(0, 255, 242);
 		box-shadow: 0.1rem 0.1rem 0.1rem black;
+		transition: border-color 0.5s ease-in-out;
+
 	}
 	h1 {
 		margin: 1rem;
@@ -53,8 +58,11 @@ const ContactInfo = styled.div`
 			flex-wrap: wrap;
 		}
 		a {
-			margin: 0 3rem 6rem 3rem;
+			margin: 0 3rem .4rem 3rem;
+		}
+		aside {
 			font-size: 1.1rem;
+			text-align: center;
 		}
 		h1 {
 			font-size: 2rem;
@@ -81,18 +89,28 @@ class ContanctMe extends Component {
 						let's talk.
 					</p>
 					<div>
-						<a href="tel://19044729516">
-							<i className="fas fa-mobile-alt" /> (904) 472-9516
-						</a>
-						<a href="mailto:lee.justin.oliver@gmail.com">
-							<i className="fas fa-envelope" />
-							lee.justin.oliver@gmail.com
-						</a>
-
-						<a href="https://www.linkedin.com/in/justin-oliver-lee/">
-							<i className="fab fa-linkedin" />
-							LinkedIn
-						</a>
+						<aside>
+							<a href="tel://19044729516">
+								<i className="fas fa-mobile-alt" />{' '}
+							</a>
+							<a href="tel://19044729516">(904) 472-9516</a>
+						</aside>
+						<aside>
+							<a href="mailto:lee.justin.oliver@gmail.com">
+								<i className="fas fa-envelope" />
+							</a>
+							<a href="mailto:lee.justin.oliver@gmail.com">
+								lee.justin.oliver@gmail.com
+							</a>
+						</aside>
+						<aside>
+							<a href="https://www.linkedin.com/in/justin-oliver-lee/">
+								<i className="fab fa-linkedin" />
+							</a>
+							<a href="https://www.linkedin.com/in/justin-oliver-lee/">
+								LinkedIn
+							</a>
+						</aside>
 					</div>
 				</ContactInfo>
 			</>

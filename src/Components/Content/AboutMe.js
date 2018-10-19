@@ -30,13 +30,16 @@ const About = styled.div`
 		box-shadow: 0.1rem 0.1rem 0.1rem rgb(169, 169, 169);
 		background-color: rgba(255, 255, 255, .65);
 		h2 {
+			text-align: left;
 			margin: 0 0 .5rem 0;
-			font-style: italic;
+			width: 90%
+			// font-style: italic;
 
 		}
 		p{
 			width: 90%;
 			text-indent: 1.5rem;
+			margin-bottom: .5rem;
 		}
 	
 	}

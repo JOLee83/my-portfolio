@@ -7,6 +7,7 @@ import AboutMe from './Components/Content/AboutMe'
 import Portfolio from './Components/Content/Portfolio'
 import ContactMe from './Components/Content/ContactMe'
 import Resume from './Components/Content/Resume'
+import Slider from './Components/Portfolio/Slider'
 
 class App extends Component {
 	state = {
@@ -45,7 +46,7 @@ class App extends Component {
 					<main>
 						<Switch>
 							<Route exact path="/" component={AboutMe} />
-							<Route path="/portfolio" component={Portfolio} />
+							<Route path="/portfolio" component={Slider} />
 							<Route path="/contactme" component={ContactMe} />
 							<Route path="/resume" component={Resume} />
 						</Switch>
