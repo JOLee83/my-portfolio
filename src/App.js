@@ -30,7 +30,6 @@ class App extends Component {
 	}
 	render() {
 		let sideMenu
-
 		if (this.state.sideMenuOpen) {
 			sideMenu = <SideMenu click={this._menuToggleClick} />
 		}

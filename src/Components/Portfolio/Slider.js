@@ -2,15 +2,10 @@ import React, { Component } from 'react'
 import Slide from './Slide'
 import LeftArrow from './LeftArrow'
 import RightArrow from './RightArrow'
-import MyWork from './MyWork.json'
-import styled from 'styled-components'
-
-const Slides = styled.div``
 
 class Slider extends Component {
 	constructor(props) {
 		super(props)
-
 		this.state = {
 			projects: [
 				{
@@ -113,7 +108,6 @@ class Slider extends Component {
 	slideWidth = () => {
 		return document.querySelector('.slide').clientWidth
 	}
-
 	render() {
 		return (
 			<div className="slider">

@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const ContactInfo = styled.div`
 	display: flex;
 	flex-direction: column;
-	
 	padding 0;
 	margin: 0;
 	width: 100%;
@@ -17,7 +16,6 @@ const ContactInfo = styled.div`
 	}
 	aside {
 		font-size: 0rem;
-
 	}
 	i {
 		margin-bottom: 1rem;
@@ -40,18 +38,14 @@ const ContactInfo = styled.div`
 		font-style: italic;
 		font-weight: normal;
 		margin-bottom: .5rem;
-
 	}
 	p {
 		margin: 0;
 		padding: 0 1.5rem;
 		text-align: center;
-
 	}
 	@media (min-width: 500px) {
-		padding-top: 3rem;
-		
-		
+		padding-top: 3rem;	
 		div {
 			display: flex;
 			justify-content: center;
@@ -73,12 +67,11 @@ const ContactInfo = styled.div`
 		}
 		i:hover {
 			border-color: rgba(255, 255, 255, 0.993);
-	
 		}
 	}
 `
 
-class ContanctMe extends Component {
+class ContactMe extends Component {
 	render() {
 		return (
 			<>
@@ -91,7 +84,7 @@ class ContanctMe extends Component {
 					<div>
 						<aside>
 							<a href="tel://19044729516">
-								<i className="fas fa-mobile-alt" />{' '}
+								<i className="fas fa-mobile-alt" />
 							</a>
 							<a href="tel://19044729516">(904) 472-9516</a>
 						</aside>
@@ -118,4 +111,4 @@ class ContanctMe extends Component {
 	}
 }
 
-export default ContanctMe
+export default ContactMe

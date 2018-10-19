@@ -5,7 +5,6 @@ const About = styled.div`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-
 	img {
 		border-radius: 50%;
 		width: 60%;
@@ -18,7 +17,6 @@ const About = styled.div`
 		);
 		padding: 0.5rem;
 		box-shadow: 0.1rem 0.1rem 0.1rem rgb(169, 169, 169);
-
 	}
 	section {
 		border 1px solid rgb(0, 255, 242);
@@ -33,15 +31,12 @@ const About = styled.div`
 			text-align: left;
 			margin: 0 0 .5rem 0;
 			width: 90%
-			// font-style: italic;
-
 		}
 		p{
 			width: 90%;
 			text-indent: 1.5rem;
 			margin-bottom: .5rem;
-		}
-	
+		}	
 	}
 	@media (min-width: 700px) {
 	img {
@@ -54,7 +49,6 @@ const About = styled.div`
 		img {
 			width: 25%;
 		}
-
 	}
 `
 
