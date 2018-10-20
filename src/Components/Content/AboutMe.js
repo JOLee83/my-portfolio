@@ -56,7 +56,7 @@ class AboutMe extends Component {
 	render() {
 		return (
 			<About>
-				<img src="./img/profilepicture.jpg" />
+				<img src="./img/profilepicture2.jpg" />
 				<section>
 					<h2>Hello,</h2>
 					<p>
@@ -67,19 +67,19 @@ class AboutMe extends Component {
 						led me to increasing my coding knowledge around how to make user
 						friendly, functional web applications. Through that learning
 						process, I have come to enjoy the process and challenges that
-						creating websites and other applications bring while increasing my
+						creating websites and other applications bring, while increasing my
 						understanding of methods to improve my development skills.
 					</p>
 					<p>
 						Although I am more than capable of back-end development, my real
 						passions are in front-end development. My eye for detail has been a
-						real asset in sites that are not only functional but also appealing
-						to the end user. My current front-end skills set includes HTML5,
-						CSS3, JavaScript, along with frameworks such as React. My back-end
-						skill set includes C# and the .Net framework. At this time I am
-						continuing my development knowledge surrounding React Native, React
-						Redux, and Phaser3. My long term goal is to continue to expand my
-						skills sets into other languages and frameworks.
+						real asset in building websites that are not only functional but
+						also appealing to the end user. My current front-end skill set
+						includes HTML5, CSS3, JavaScript, along with frameworks such as
+						React. My back-end skill set includes C# and the .Net framework. At
+						this time I am continuing my development knowledge surrounding React
+						Native, React Redux, and Phaser3. My long term goal is to continue
+						to expand my skill sets into other languages and frameworks.
 					</p>
 					<p>
 						Development has proven to fit well with other pieces of my life.

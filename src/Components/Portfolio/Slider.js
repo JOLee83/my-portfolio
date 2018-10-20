@@ -23,17 +23,15 @@ class Slider extends Component {
 	}
 	prevSlide = () => {
 		if (this.state.index === 0) {
-			this.setState(prevState => ({
+			this.setState(() => ({
 				index: this.state.projects.length - 1,
-				translateValue:
-					prevState.translateValue +
-					-this.slideWidth() * (this.state.projects.length - 1)
+				translateValue: -this.slideWidth() * (this.state.projects.length - 1)
 			}))
 		}
 		if (this.state.index !== 0) {
 			this.setState(prevState => ({
 				index: prevState.index - 1,
-				translateValue: prevState.translateValue - -this.slideWidth()
+				translateValue: prevState.translateValue + this.slideWidth()
 			}))
 		}
 	}
@@ -47,7 +45,7 @@ class Slider extends Component {
 		if (this.state.index !== this.state.projects.length - 1) {
 			this.setState(prevState => ({
 				index: prevState.index + 1,
-				translateValue: prevState.translateValue + -this.slideWidth()
+				translateValue: prevState.translateValue - this.slideWidth()
 			}))
 		}
 	}
