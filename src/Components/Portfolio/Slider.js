@@ -15,8 +15,7 @@ class Slider extends Component {
 	}
 	updateScreen = () => {
 		this.setState(() => ({
-			index: 0,
-			translateValue: 0
+			translateValue: -this.slideWidth() * this.state.index
 		}))
 	}
 	componentDidMount() {
@@ -24,7 +23,6 @@ class Slider extends Component {
 	}
 	prevSlide = () => {
 		if (this.state.index === 0) {
-			// return
 			this.setState(prevState => ({
 				index: this.state.projects.length - 1,
 				translateValue:
