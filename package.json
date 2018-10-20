@@ -2,7 +2,7 @@
 	"name": "my-portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://jolee83.github.io/my-portfolio",
+	"homepage": "https://www.justin-oliver.com",
 	"dependencies": {
 		"gh-pages": "^2.0.1",
 		"react": "^16.5.2",
