@@ -148,7 +148,7 @@ section i {
 	position: absolute;
 	top: 50%;
 	right: 25px;
-	z-index: 999;
+	z-index: 99;
 	color: rgb(0, 255, 242);
 	font-size: 2rem;
 	text-shadow: -0.1rem 0.1rem 0.1rem black;
@@ -159,7 +159,7 @@ section i {
 	position: absolute;
 	top: 50%;
 	left: 25px;
-	z-index: 999;
+	z-index: 99;
 	color: rgb(0, 255, 242);
 	font-size: 2rem;
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
