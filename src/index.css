@@ -152,7 +152,8 @@ section i {
 	color: rgb(0, 255, 242);
 	font-size: 2rem;
 	text-shadow: -0.1rem 0.1rem 0.1rem black;
-	transition: text-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+	transition: text-shadow 0.5s ease-in-out, transform 0.5s ease-in-out,
+		color 0.5s ease-in-out;
 }
 
 .backArrow {
@@ -163,7 +164,8 @@ section i {
 	color: rgb(0, 255, 242);
 	font-size: 2rem;
 	text-shadow: 0.1rem 0.1rem 0.1rem black;
-	transition: text-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+	transition: text-shadow 0.5s ease-in-out, transform 0.5s ease-in-out,
+		color 0.5s ease-in-out;
 }
 .backArrow:active,
 .nextArrow:active {
@@ -202,6 +204,7 @@ section i {
 	.backArrow:hover,
 	.nextArrow:hover {
 		transform: scale(1.5);
+		color: rgba(255, 255, 255, 0.993);
 	}
 	header {
 		flex-direction: row-reverse;

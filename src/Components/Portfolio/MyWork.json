@@ -35,6 +35,20 @@
 		"code": "https://github.com/JOLee83/my-score-board"
 	},
 	{
+		"title": "Store Front",
+		"imageSource": "./img/storefront.png",
+		"description": "A fake store front made with React Router from my second week of learning React at SDG.",
+		"location": "https://store-front-justin.surge.sh/",
+		"code": "https://github.com/JOLee83/store-front"
+	},
+	{
+		"title": "Roshambo",
+		"imageSource": "./img/roshambo.png",
+		"description": "Roshambo was the very first proect with JavaScript, and the first video game I made. One day I'm going to add Lizard and Spock to it.",
+		"location": "http://roshambo-justin.surge.sh/",
+		"code": "https://github.com/JOLee83/roshambo"
+	},
+	{
 		"title": "My Portfolio",
 		"imageSource": "./img/portfolio.png",
 		"description": "I started to build this site as I completed the front-end portion of my time at SDG. I used React JS, React Router, Styled Components, and much more to build this site.",

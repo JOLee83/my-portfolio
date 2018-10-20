@@ -28,6 +28,9 @@ const ShowMyWork = styled.div`
 			white-space: pre-wrap;
 			margin-top: 0;
 		}
+		aside{
+			margin: 0 48.5% 0 51.5%;
+		}
 	}
 	a {
 		padding: 0 .5rem;
