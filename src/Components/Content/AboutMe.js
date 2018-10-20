@@ -56,7 +56,7 @@ class AboutMe extends Component {
 	render() {
 		return (
 			<About>
-				<img src="./img/profilepicture2.jpg" />
+				<img src="./img/profilepicture2.jpg" alt="Justin" />
 				<section>
 					<h2>Hello,</h2>
 					<p>

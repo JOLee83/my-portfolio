@@ -51,7 +51,7 @@ const Slide = ({ title, image, location, code, description }) => {
 					</section>
 					<aside>
 						<a href={location} target="_blank" rel="noopener noreferrer">
-							The Site
+							Website
 						</a>
 						<a
 							className="git"
@@ -62,7 +62,7 @@ const Slide = ({ title, image, location, code, description }) => {
 							<i className="fab fa-github-square" title="My GitHub" />
 						</a>
 						<a href={code} target="_blank" rel="noopener noreferrer">
-							The Code
+							Repository
 						</a>
 					</aside>
 				</section>
