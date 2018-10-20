@@ -26,7 +26,11 @@ class Resume extends Component {
 	render() {
 		return (
 			<Document>
-				<a href="https://drive.google.com/file/d/1TuEUxaJHyiaz4SVyjLEzUuuqmxlJBvIq/view?usp=sharing">
+				<a
+					href="https://drive.google.com/file/d/1TuEUxaJHyiaz4SVyjLEzUuuqmxlJBvIq/view?usp=sharing"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<i className="fas fa-file" /> Resume (PDF)
 				</a>
 				<img alt="resume" src="./img/Justin_Oliver_Lee_Resume.jpg" />
