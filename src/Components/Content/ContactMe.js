@@ -97,7 +97,11 @@ class ContactMe extends Component {
 							</a>
 						</aside>
 						<aside>
-							<a href="https://www.linkedin.com/in/justin-oliver-lee/">
+							<a
+								href="https://www.linkedin.com/in/justin-oliver-lee/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<i className="fab fa-linkedin" />
 							</a>
 							<a href="https://www.linkedin.com/in/justin-oliver-lee/">
